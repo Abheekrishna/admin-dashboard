@@ -1,0 +1,198 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Lato';
+	background-color: var(--bg-color);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+	width: 50px;
+}
+
+:root {
+	--bg-color: #e2e8f0;
+	--header-bg: #ffffff;
+	--sidebar-bg: #292524;
+	--text-color: #000000;
+	--text-color-2: #ffffff;
+	--project-border: #0ea5e9;
+	--input-bg: #e2e8f0;
+	--button-bg: #0284c7;
+	--sidebar-color: #a2a2a2;
+}
+.header {
+	display: grid;
+	background-color: var(--header-bg);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.168);
+}
+.top-sec {
+	display: flex;
+	justify-content: space-around;
+	padding: 10px 15px 10px 15px;
+}
+.top-search {
+	display: flex;
+	align-items: center;
+}
+.profile-picture {
+	width:  50px;
+	height: 50px;
+	border: none;
+	border-radius: 100%;
+	object-fit: cover;
+}
+.search-bar {
+	padding: 10px 500px 10px 18px;
+	border: none;
+	border-radius: 100px;
+	background-color: var(--input-bg);
+}
+.search-icon {
+	font-size: 28px;
+	margin-right: 10px;
+}
+.top-profile {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.notification-icon, .profile-picture, .username {
+	margin-right: 20px;
+}
+.notification-icon {
+	font-size: 28px;
+}
+.username {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+/* Greeting Section */
+
+.user-section {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	padding: 10px 15px 20px 150px;
+}
+.greeting-sec {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.profile-picture-greet {
+	width:  70px;
+	height: 70px;
+	border-radius: 150px;
+	border: none;
+}
+.greet-text, .name-greet {
+	font-weight: 600;
+}
+.name-greet {
+	margin-top: 7px;
+	font-size: 22px;
+}
+.greet-text {
+	font-size: 14px;
+}
+.utility-section {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+	gap: 20px;
+	padding-right: 140px;
+}
+.utility {
+	padding: 8px 25px;
+	background-color: var(--button-bg);
+	border: none;
+	border-radius: 100px;
+	color: var(--text-color-2);
+	font-weight: 600;
+	cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+	background-color: var(--sidebar-bg);
+	color: var(--sidebar-color);
+	width: min-content;
+	padding-right: 70px;
+	padding-left: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.logo-text {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 30px;
+	align-items: center;
+}
+.logo {
+	font-size: 45px;
+}
+.logo-title {
+	font-size: 25px;
+	font-weight: 600;
+}
+.normal-menu {
+	display: grid;
+}
+.menu-icons {
+	display: flex;
+	gap: 20px;
+	padding: 10px;
+}
+.menu-icons span {
+	font-size: 27px;
+}
+.utility-menu {
+	margin-top: 30px;
+}
+
+/* Content */
+.content {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 40px;
+}
